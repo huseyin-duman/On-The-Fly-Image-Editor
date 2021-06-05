@@ -5,14 +5,19 @@ On The Fly Image Editor is a web server which can resize, crop, rotate and grays
 
 You need to open your browser and type your request after running the server, in the format which is given below.
 http://[hostname]:[port]/v1/[operation]:[parameters]/url:[image url without the protocol] 
+
 In given code [hostname] is localhost or 127.0.0.1 and [port] is 8080.
+
 [operation] can be resize, rotate,crop,or grayscale.
+
 [parameters] are depends according to your operation. 
 For resize you need to write [width]x[height]. For example 640x360.
 For rotate you need to write [degree]. For example 90.
 For crop you need to write [left]x[top]x[right]x[bottom]. For example 10x20x150x300.
 For grayscale you can write anything but it must not bu empty. Best is the putting -.
+
 [image url without the protocol]  can be an image from a website. For example, upload.wikimedia.org/wikipedia/commons/b/b1/VAN_CAT.png or upload.wikimedia.org/wikipedia/commons/5/5d/Akbash_Dog_male_2016.jpg
+
 This is the full url example which you can type your browser. 
 http://localhost:8080/v1/resize:640x360/url:upload.wikimedia.org/wikipedia/commons/b/b1/VAN_CAT.png
 
