@@ -4,6 +4,7 @@
 On The Fly Image Editor is a web server which can resize, crop, rotate and grayscale an image from a given url. It is developed in python by using Flask and ImageMagick. 
 
 You need to open your browser and type your request after running the server, in the format which is given below.
+
 http://[hostname]:[port]/v1/[operation]:[parameters]/url:[image url without the protocol] 
 
 In given code [hostname] is localhost or 127.0.0.1 and [port] is 8080.
